@@ -1,0 +1,1048 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    list-style: none;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+body {
+    background-color: white;
+    color: #4682A9;
+    overflow-x: hidden;
+}
+
+.mainHome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 5%;
+    margin-left: 1rem;
+}
+
+.mainExperience {
+    margin-left: 1rem;
+}
+
+.mainProject {
+    margin-left: 1rem;
+}
+
+.mainCertificate {
+    margin-left: 1rem;
+}
+
+.mainAssignment {
+    margin-left: 1rem;
+}
+
+.mainContact {
+    margin-left: 1rem;
+}
+
+.name {
+    font-size: 5rem;
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+.carrier {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.brief {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.socialLinkImg {
+    padding-right: 20px;
+}
+
+.imageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.myImage {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+}
+
+.socialLinkImg:hover {
+    transform: scale(1.2);
+}
+
+.certificate {
+    font-size: 4rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.experience {
+    font-size: 4rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project {
+    font-size: 4rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.assignment {
+    font-size: 4rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact {
+    font-size: 4rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.xpCard {
+    background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
+    color: #4682a9;
+    border-radius: 10px;
+    padding: 10px;
+    height: 320px;
+    width: 250px;
+}
+
+.xpCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.projectCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.certificateCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.assignmentCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.socialLinks {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+
+    position: absolute;
+    left: 80px;
+}
+
+.socialLinksVertical {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 1.5rem;
+    position: relative;
+    top: 3rem;
+}
+
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.containerOne:hover {
+    background-color: #2ceb29;
+    transition-duration: .3s;
+}
+
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+}
+
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.certificateCard {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.certificateCard img {
+    width: 300px;
+    height: 200px;
+    fill: #4682A9FF;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.certificateCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.certificateCard:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    margin: 0;
+    font-size: 24px;
+    color: #4682A9FF;
+    font-weight: bold;
+}
+
+.certificateCard:hover svg {
+    scale: 0;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.showAllBtn {
+    display: flex;
+    min-width: 100px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    border: 2px solid #91c8e4;
+    background-color: transparent;
+    position: relative;
+    left: 50%;
+}
+
+.showAllBtn::before {
+    content: '';
+    width: 100%;
+    height: 0;
+    background-color: #91c8e4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.showAllBtn:hover::before {
+    height: 100%;
+    top: 0;
+}
+
+.showAllBtn span {
+    color: #4682a9;
+    line-height: 1;
+    font-weight: bold;
+    transition: color .4s;
+}
+
+.showAllBtn:hover span {
+    color: #000;
+}
+
+.projectCard {
+    position: relative;
+    width: 350px;
+    aspect-ratio: 16/9;
+    background-color: #f6f4eb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.projectCard img {
+    width: 350px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__image {
+    width: 100%;
+    height: 100%;
+}
+
+.webTechnology {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
+}
+
+.xpCard > h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.xpCard > p {
+    margin: 10px;
+}
+
+.bootstrap {
+    background-color: #563d7c;
+    border-radius: 10px;
+    padding: 4px;
+    color: #ffffff;
+}
+
+.react {
+    background-color: #61dbfb;
+    border-radius: 10px;
+    padding: 4px;
+    color: #ffffff;
+}
+
+.jQuery {
+    background-color: #0769ad;
+    border-radius: 10px;
+    padding: 4px;
+    color: #ffffff;
+}
+
+.nodejs {
+    background-color: #026e00;
+    border-radius: 10px;
+    padding: 4px;
+    color: #ffffff;
+}
+
+.mobileTechnology {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
+}
+
+.flutter {
+    background-color: #02569b;
+    border-radius: 10px;
+    padding: 4px;
+    color: #ffffff;
+}
+
+.jetpackCompose {
+    background-color: #6200ee;
+    border-radius: 10px;
+    padding: 4px;
+    color: #ffffff;
+}
+
+.reactNative {
+    background-color: #61dbfb;
+    border-radius: 10px;
+    padding: 4px;
+    color: #ffffff;
+}
+
+.projectCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.projectCard__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.projectCard:hover .projectCard__content {
+    transform: rotateX(0deg);
+}
+
+.projectCard__title {
+    margin: 0;
+    font-size: 20px;
+    color: #4682a9;
+    font-weight: bolder;
+}
+
+.projectCard:hover svg {
+    scale: 0;
+}
+
+.projectCard__description {
+    margin: 10px 0 10px;
+    font-size: 12px;
+    color: #4682a9;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.projectCard__button {
+    padding: 15px;
+    border-radius: 8px;
+    background: #f6f4eb;
+    border: none;
+    color: white;
+}
+
+.secondary {
+    background: transparent;
+    color: #4682a9;
+    font-weight: bold;
+    border: 1px solid #91c8e4;
+}
+
+.secondary:hover {
+    background: #91c8e4;
+}
+
+.svg {
+    transform: translateY(-20px) rotate(30deg);
+    opacity: 0;
+    width: 2rem;
+    transition: 0.4s ease-in-out;
+}
+
+.assignment-title {
+    color: #4682a9;
+    font-size: 1.5em;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.small-desc {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #452c2c;
+}
+
+.small-desc {
+    font-size: 1em;
+}
+
+.go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #6293c8, #384c6c);
+    border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans, serif;
+}
+
+.assignmentCard {
+    display: block;
+    position: relative;
+    max-width: 300px;
+    max-height: 320px;
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.assignmentCard:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: linear-gradient(135deg, #364a60, #384c6c);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+}
+
+.assignmentCard:hover:before {
+    transform: scale(28);
+}
+
+.assignmentCard:hover .small-desc {
+    transition: all 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.assignmentCard:hover .assignment-title {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+}
+
+.colorful-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-input {
+    width: 90%;
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: #333;
+    border-radius: 5px;
+}
+
+textarea.form-input {
+    height: 100px;
+}
+
+.form-button {
+    display: block;
+    width: 99%;
+    padding: 10px;
+    background-color: #4682a9;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #afd0f2;
+}
+
+.backToTopBtn {
+    width: 135px;
+    height: 56px;
+    overflow: hidden;
+    border: none;
+    color: #4682a9;
+    background: none;
+    position: absolute;
+    left: 70rem;
+    padding-bottom: 2em;
+}
+
+.backToTopBtn > div, .backToTopBtn > svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.backToTopBtn:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background: currentColor;
+    transition: transform 0.25s ease-out;
+}
+
+.backToTopBtn:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.backToTopBtn .clone > *, .backToTopBtn .backText > * {
+    opacity: 1;
+    font-size: 1.3rem;
+    transition: 0.2s;
+    margin-left: 4px;
+}
+
+.backToTopBtn .clone > * {
+    transform: translateY(60px);
+}
+
+.backToTopBtn:hover .clone > * {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.backToTopBtn:hover .backText > * {
+    opacity: 1;
+    transform: translateY(-60px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.backText:hover .clone > :nth-child(1) {
+    transition-delay: 0.15s;
+}
+
+.backToTopBtn:hover .clone > :nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.backToTopBtn:hover .clone > :nth-child(3) {
+    transition-delay: 0.25s;
+}
+
+.backToTopBtn:hover .clone > :nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.backToTopBtn svg {
+    width: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-50deg);
+    transition: 0.2s ease-out;
+}
+
+.backToTopBtn:hover svg {
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.contactContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 3rem;
+}
+
+.headContainer {
+    display: grid;
+    grid-template-columns:repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    position: static;
+    top: 0;
+}
+
+.menu {
+    grid-column-start: 5;
+    grid-column-end: -1;
+    display: flex;
+    font-size: 1.1rem;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.menuBtn {
+    display: flex;
+    margin: .2rem;
+    padding: .2rem;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    border: 2px solid #4682A9;
+}
+
+.menuBtn:hover {
+    background-color: #4682A9;
+    color: white;
+}
+
+.socialLinksVertical p {
+    font-size: 1.3rem;
+    position: relative;
+    font-weight: bold;
+    left: 6.5rem;
+    top: -4rem
+}
+
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    padding: .2rem;
+}
+
+@media (max-width: 480px) {
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socialLinks {
+        left: 0.35rem;
+        top: 16rem;
+    }
+
+    .xpCards, .certificateCards, .projectCards, .assignmentCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .name, .experience, .project, .certificate, .assignment, .contact {
+        font-size: 3rem;
+    }
+
+    .myImage {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mainHome {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume, .showAllBtn {
+        top: 1rem;
+    }
+
+    .showAllBtn {
+        left: 1rem;
+    }
+
+    .backToTopBtn {
+        display: none;
+    }
+
+    .resume {
+        position: relative;
+        left: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    .backToTopBtn {
+        display: none;
+    }
+
+    .resume {
+        position: relative;
+        left: 40%;
+    }
+
+    .socialLinksVertical {
+        align-items: flex-start;
+    }
+
+    .socialLinksVertical p {
+        font-size: 1.2rem;
+        position: relative;
+        font-weight: bold;
+        left: 4.5rem;
+        top: -4rem;
+    }
+
+    .myImage {
+        display: none;
+    }
+
+    .socialLinks {
+        left: 0.35rem;
+        top: 21rem;
+    }
+
+    .headContainer {
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .name, .experience, .project, .certificate, .assignment, .contact {
+        font-size: 4rem;
+    }
+
+    .menu {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 0;
+        gap: 0.5rem;
+        margin: .5rem;
+    }
+
+    .menuBtn {
+        font-size: .9rem;
+        padding: .1rem;
+        gap: 0;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .carrier {
+        font-size: 3rem;
+    }
+
+    .myImage {
+        width: fit-content;
+    }
+}
+
+@media (min-width: 1601px) {
+    .xpCard {
+        height: 400px;
+        width: 350px;
+    }
+
+    .xpCard > h3 {
+        font-size: 2rem;
+    }
+
+    .xpCard > p {
+        font-size: 1.3rem;
+    }
+
+    .bootstrap, .react, .jQuery, .nodejs, .flutter, .jetpackCompose, .reactNative {
+        font-size: 1.3rem;
+    }
+
+    .name {
+        font-size: 10rem;
+    }
+
+    .brief {
+        font-size: 2rem;
+    }
+
+    .carrier {
+        font-size: 3rem;
+    }
+
+    .myImage {
+        width: fit-content;
+    }
+
+    .backToTopBtn {
+        left: 90rem;
+    }
+
+    .menuBtn {
+        font-size: 1.4rem;
+        padding: .2rem;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1.5s;
+    filter: blur(10px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+    transition: all 1.5s;
+}
+
+.xpCard:nth-child(2) {
+    transition-delay: 100ms;
+}
+
+.projectCard:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.projectCard:nth-child(3) {
+    transition-delay: 300ms;
+}
+
+.projectCard:nth-child(4) {
+    transition-delay: 400ms;
+}
+
+.assignmentCard:nth-child(2) {
+    transition-delay: 100ms;
+}
+
+.assignmentCard:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.assignmentCard:nth-child(4) {
+    transition-delay: 300ms;
+}
+
+.certificateCard:nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.certificateCard:nth-child(3) {
+    transition-delay: 500ms;
+}
+
+.certificateCard:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.contactSection:nth-child(2) {
+    transition-delay: 100ms;
+}
+
+.homeSection:nth-child(2) {
+    transition-delay: 100ms;
+}
+
+.homeSection:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.homeSection:nth-child(4) {
+    transition-delay: 300ms;
+}
+
+.homeSection:nth-child(5) {
+    transition-delay: 400ms;
+}
